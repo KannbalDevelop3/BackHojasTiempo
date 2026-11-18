@@ -1,0 +1,316 @@
+{
+  "groups": [
+    {
+      "name": "Administrador del sistema",
+      "permissions": [
+        {
+          "app": "api",
+          "model": "tbarea",
+          "codenames": ["view_tbarea", "add_tbarea", "change_tbarea", "delete_tbarea"]
+        },
+        {
+          "app": "api",
+          "model": "tbpuesto",
+          "codenames": ["view_tbpuesto", "add_tbpuesto", "change_tbpuesto", "delete_tbpuesto"]
+        },
+        {
+          "app": "api",
+          "model": "tbcolaborador",
+          "codenames": ["view_tbcolaborador", "add_tbcolaborador", "change_tbcolaborador", "delete_tbcolaborador"]
+        },
+        {
+          "app": "api",
+          "model": "tblindustria",
+          "codenames": ["view_tblindustria", "add_tblindustria", "change_tblindustria", "delete_tblindustria"]
+        },
+        {
+          "app": "api",
+          "model": "tbdireccion",
+          "codenames": ["view_tbdireccion", "add_tbdireccion", "change_tbdireccion", "delete_tbdireccion"]
+        },
+        {
+          "app": "api",
+          "model": "tbcliente",
+          "codenames": ["view_tbcliente", "add_tbcliente", "change_tbcliente", "delete_tbcliente"]
+        },
+        {
+          "app": "api",
+          "model": "tbproyecto",
+          "codenames": ["view_tbproyecto", "add_tbproyecto", "change_tbproyecto", "delete_tbproyecto", "can_view_reports"]
+        },
+        {
+          "app": "api",
+          "model": "tbproycliente",
+          "codenames": ["view_tbproycliente", "add_tbproycliente", "change_tbproycliente", "delete_tbproycliente"]
+        },
+        {
+          "app": "api",
+          "model": "tbmodulo",
+          "codenames": ["view_tbmodulo", "add_tbmodulo", "change_tbmodulo", "delete_tbmodulo"]
+        },
+        {
+          "app": "api",
+          "model": "relasignar",
+          "codenames": ["view_relasignar", "add_relasignar", "change_relasignar", "delete_relasignar"]
+        },
+        {
+          "app": "api",
+          "model": "tblabor",
+          "codenames": ["view_tblabor", "add_tblabor", "change_tblabor", "delete_tblabor"]
+        },
+        {
+          "app": "api",
+          "model": "tbcontacto",
+          "codenames": ["view_tbcontacto", "add_tbcontacto", "change_tbcontacto", "delete_tbcontacto"]
+        },
+        {
+          "app": "api",
+          "model": "relclientehascontacto",
+          "codenames": ["view_relclientehascontacto", "add_relclientehascontacto", "change_relclientehascontacto", "delete_relclientehascontacto", "can_export_csv"]
+        },
+        {
+          "app": "api",
+          "model": "relcollabhascontacto",
+          "codenames": ["view_relcollabhascontacto", "add_relcollabhascontacto", "change_relcollabhascontacto", "delete_relcollabhascontacto"]
+        },
+        {
+          "app": "api",
+          "model": "tbproveedor",
+          "codenames": ["view_tbproveedor", "add_tbproveedor", "change_tbproveedor", "delete_tbproveedor"]
+        },
+        {
+          "app": "api",
+          "model": "relprovhascontact",
+          "codenames": ["view_relprovhascontact", "add_relprovhascontact", "change_relprovhascontact", "delete_relprovhascontact"]
+        },
+        {
+          "app": "api",
+          "model": "reltenerprov",
+          "codenames": ["view_reltenerprov", "add_reltenerprov", "change_reltenerprov", "delete_reltenerprov"]
+        },
+        {
+          "app": "api",
+          "model": "tblineanegocio",
+          "codenames": ["view_tblineanegocio", "add_tblineanegocio", "change_tblineanegocio", "delete_tblineanegocio"]
+        },
+        {
+          "app": "api",
+          "model": "tblineaservicio",
+          "codenames": ["view_tblineaservicio", "add_tblineaservicio", "change_tblineaservicio", "delete_tblineaservicio"]
+        },
+        {
+          "app": "api",
+          "model": "tblistadoservicio",
+          "codenames": ["view_tblistadoservicio", "add_tblistadoservicio", "change_tblistadoservicio", "delete_tblistadoservicio"]
+        },
+        {
+          "app": "api",
+          "model": "tblcategoria",
+          "codenames": ["view_tblcategoria", "add_tblcategoria", "change_tblcategoria", "delete_tblcategoria"]
+        },
+        {
+          "app": "api",
+          "model": "tbcatalogactiv",
+          "codenames": ["view_tbcatalogactiv", "add_tbcatalogactiv", "change_tbcatalogactiv", "delete_tbcatalogactiv"]
+        },
+        {
+          "app": "api",
+          "model": "relactcattiempo",
+          "codenames": ["view_relactcattiempo", "add_relactcattiempo", "change_relactcattiempo", "delete_relactcattiempo"]
+        },
+        {
+          "app": "api",
+          "model": "tbcatalogtiempo",
+          "codenames": ["view_tbcatalogtiempo", "add_tbcatalogtiempo", "change_tbcatalogtiempo", "delete_tbcatalogtiempo"]
+        },
+
+        {
+          "app": "auth",
+          "model": "user",
+          "codenames": ["view_user", "add_user", "change_user", "delete_user"]
+        },
+        {
+          "app": "auth",
+          "model": "group",
+          "codenames": ["view_group", "add_group", "change_group", "delete_group"]
+        },
+        {
+          "app": "auth",
+          "model": "permission",
+          "codenames": ["view_permission"]
+        }
+      ]
+    }
+    ,
+
+    {
+      "name": "Comercial",
+      "permissions": [
+        {
+          "app": "api",
+          "model": "tblindustria",
+          "codenames": ["view_tblindustria", "add_tblindustria", "change_tblindustria"]
+        },
+        {
+          "app": "api",
+          "model": "tbcliente",
+          "codenames": ["view_tbcliente", "add_tbcliente", "change_tbcliente"]
+        },
+        {
+          "app": "api",
+          "model": "tbcontacto",
+          "codenames": ["view_tbcontacto", "add_tbcontacto", "change_tbcontacto"]
+        },
+        {
+          "app": "api",
+          "model": "relclientehascontacto",
+          "codenames": ["view_relclientehascontacto", "add_relclientehascontacto", "change_relclientehascontacto"]
+        },
+        {
+          "app": "api",
+          "model": "tbproyecto",
+          "codenames": ["view_tbproyecto"]
+        },
+        {
+          "app": "api",
+          "model": "tbcatalogactiv",
+          "codenames": ["view_tbcatalogactiv"]
+        },
+        {
+          "app": "api",
+          "model": "tbdireccion",
+          "codenames": ["view_tbdireccion", "add_tbdireccion", "change_tbdireccion"]
+        }
+      ]
+    },
+
+    {
+      "name": "Reporting",
+      "permissions": [
+        {
+          "app": "api",
+          "model": "tbproyecto",
+          "codenames": ["view_tbproyecto", "can_view_reports"]
+        },
+        {
+          "app": "api",
+          "model": "tblabor",
+          "codenames": ["view_tblabor"]
+        },
+        {
+          "app": "api",
+          "model": "tbcatalogactiv",
+          "codenames": ["view_tbcatalogactiv"]
+        },
+        {
+          "app": "api",
+          "model": "tbmodulo",
+          "codenames": ["view_tbmodulo"]
+        },
+        {
+          "app": "api",
+          "model": "tbcliente",
+          "codenames": ["view_tbcliente"]
+        },
+        {
+          "app": "api",
+          "model": "relclientehascontacto",
+          "codenames": ["view_relclientehascontacto", "can_export_csv"]
+        }
+      ]
+    },
+
+    {
+      "name": "Líderes",
+      "permissions": [
+        {
+          "app": "api",
+          "model": "tbproyecto",
+          "codenames": ["view_tbproyecto", "add_tbproyecto", "change_tbproyecto"]
+        },
+        {
+          "app": "api",
+          "model": "tbmodulo",
+          "codenames": ["view_tbmodulo", "add_tbmodulo", "change_tbmodulo"]
+        },
+        {
+          "app": "api",
+          "model": "relasignar",
+          "codenames": ["view_relasignar", "add_relasignar", "change_relasignar"]
+        },
+        {
+          "app": "api",
+          "model": "tblabor",
+          "codenames": ["view_tblabor"]
+        },
+        {
+          "app": "api",
+          "model": "tbcliente",
+          "codenames": ["view_tbcliente"]
+        },
+        {
+          "app": "api",
+          "model": "tbcontacto",
+          "codenames": ["view_tbcontacto"]
+        },
+        {
+          "app": "api",
+          "model": "relclientehascontacto",
+          "codenames": ["view_relclientehascontacto", "can_export_csv"]
+        }
+      ]
+    },
+
+    {
+      "name": "General",
+      "permissions": [
+        {
+          "app": "api",
+          "model": "tblabor",
+          "codenames": ["view_tblabor", "add_tblabor", "change_tblabor"]
+        },
+        {
+          "app": "api",
+          "model": "tbproyecto",
+          "codenames": ["view_tbproyecto"]
+        },
+        {
+          "app": "api",
+          "model": "tbcatalogactiv",
+          "codenames": ["view_tbcatalogactiv"]
+        },
+        {
+          "app": "api",
+          "model": "tbmodulo",
+          "codenames": ["view_tbmodulo"]
+        },
+        {
+          "app": "api",
+          "model": "tbcliente",
+          "codenames": ["view_tbcliente"]
+        }
+      ]
+    },
+
+    {
+      "name": "Administrador de permisos",
+      "permissions": [
+        {
+          "app": "auth",
+          "model": "group",
+          "codenames": ["view_group", "add_group", "change_group", "delete_group"]
+        },
+        {
+          "app": "auth",
+          "model": "permission",
+          "codenames": ["view_permission"]
+        },
+        {
+          "app": "auth",
+          "model": "user",
+          "codenames": ["view_user", "change_user"]
+        }
+      ]
+    }
+  ]
+}

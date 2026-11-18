@@ -1,0 +1,10 @@
+{
+  "groups": [
+    { "name": "Administrador del sistema", "permissions": [] },
+    { "name": "Comercial", "permissions": [] },
+    { "name": "Reporting", "permissions": [] },
+    { "name": "Consultor", "permissions": [] },
+    { "name": "Finanzas", "permissions": [] },
+    { "name": "Soporte TI", "permissions": [] }
+  ]
+}

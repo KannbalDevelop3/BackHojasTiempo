@@ -1,0 +1,28 @@
+[0;1;32m●[0m mariadb.service - MariaDB 10.5.23 database server
+     Loaded: loaded (/lib/systemd/system/mariadb.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Mon 2025-09-15 19:23:33 UTC; 3min 35s ago
+       Docs: man:mariadbd(8)
+             https://mariadb.com/kb/en/library/systemd/
+    Process: 436 ExecStartPre=/usr/bin/install -m 755 -o mysql -g root -d /var/run/mysqld (code=exited, status=0/SUCCESS)
+    Process: 441 ExecStartPre=/bin/sh -c systemctl unset-environment _WSREP_START_POSITION (code=exited, status=0/SUCCESS)
+    Process: 452 ExecStartPre=/bin/sh -c [ ! -e /usr/bin/galera_recovery ] && VAR= ||   VAR=`cd /usr/bin/..; /usr/bin/galera_recovery`; [ $? -eq 0 ]   && systemctl set-environment _WSREP_START_POSITION=$VAR || exit 1 (code=exited, status=0/SUCCESS)
+    Process: 526 ExecStartPost=/bin/sh -c systemctl unset-environment _WSREP_START_POSITION (code=exited, status=0/SUCCESS)
+    Process: 528 ExecStartPost=/etc/mysql/debian-start (code=exited, status=0/SUCCESS)
+   Main PID: 504 (mariadbd)
+     Status: "Taking your SQL requests now..."
+      Tasks: 12 (limit: 1117)
+     Memory: 223.5M
+        CPU: 4.517s
+     CGroup: /system.slice/mariadb.service
+             └─504 /usr/sbin/mariadbd
+
+Sep 15 19:23:33 ip-172-31-21-128 /etc/mysql/debian-start[533]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mLooking for 'mariadb' as: /usr/bin/mariadb[0m
+Sep 15 19:23:33 ip-172-31-21-128 /etc/mysql/debian-start[533]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mLooking for 'mariadb-check' as: /usr/bin/mariadb-check[0m
+Sep 15 19:23:33 ip-172-31-21-128 /etc/mysql/debian-start[533]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mThis installation of MariaDB is already upgraded to 10.5.18-MariaDB.[0m
+Sep 15 19:23:33 ip-172-31-21-128 /etc/mysql/debian-start[533]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mThere is no need to run mysql_upgrade again for 10.5.23-MariaDB.[0m
+Sep 15 19:23:33 ip-172-31-21-128 /etc/mysql/debian-start[533]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mYou can use --force if you still want to run mysql_upgrade[0m
+Sep 15 19:23:33 ip-172-31-21-128 /etc/mysql/debian-start[542]: Checking for insecure root accounts.
+Sep 15 19:23:33 ip-172-31-21-128 /etc/mysql/debian-start[546]: Triggering myisam-recover for all MyISAM tables and aria-recover for all Aria tables
+Sep 15 19:23:34 ip-172-31-21-128 mariadbd[504]: 2025-09-15 19:23:34 0 [Note] InnoDB: Buffer pool(s) load completed at 250915 19:23:34
+Sep 15 19:23:48 ip-172-31-21-128 mariadbd[504]: 2025-09-15 19:23:48 30 [Warning] IP address '106.75.137.178' could not be resolved: Name or service not known
+Sep 15 19:23:49 ip-172-31-21-128 mariadbd[504]: 2025-09-15 19:23:49 30 [Warning] Access denied for user 'root'@'106.75.137.178' (using password: NO)
